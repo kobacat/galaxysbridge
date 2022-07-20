@@ -1,0 +1,51 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+@font-face {
+  font-family: abstract;
+  src:url('/fonts/abstract001.ttf');
+}
+   body {
+    background-image: url("/images/newbg.jpg");
+    background-color: #000000;
+    background-position: cover;
+    background-size: cover;
+    backdrop-filter: brightness(20%);
+    color: rgb(255, 255, 255);
+    font-family: Verdana;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display:flex; flex-direction:column; justify-content:center;
+    min-height:100vh;
+  }
+  img {
+    height:auto;
+    max-height: 98vh;
+  }
+  .secret {
+    font-weight: bold;
+    max-height: 30rem;
+    font-family: abstract;
+    font-size: 4em;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    filter: brightness(90%);
+  }
+  .overlay {
+    background-image: url("/images/overlay1.gif");
+    height: 100%;
+    width: 100%;
+    opacity: 0.19;
+    background-repeat: repeat;
+    position: absolute;
+  }
+  .redirect {
+    font-weight: bold;
+    max-height: 30rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 2em;
+    text-align: center;
+  }
+  
