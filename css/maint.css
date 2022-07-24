@@ -1,10 +1,10 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
 @font-face {
   font-family: abstract;
   src:url('/fonts/abstract001.ttf');
 }
+  html {
+    height: 100%;
+  }
    body {
     background-image: url("/images/newbg.jpg");
     background-color: #000000;
@@ -16,9 +16,77 @@
     text-align: center;
     margin: 0;
     padding: 0;
+    height: 100%;
     border: 0;
     display:flex; flex-direction:column; justify-content:center;
     min-height:100vh;
+  }
+  body::before {
+    z-index: -1;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* IE Fallback */
+    width: 100%;
+    height: 100%;
+  }
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 285px;
+    margin: -0px 0 0 -182px;
+    padding: 40px;
+    box-shadow: 0 0 3px rgb(255, 0, 0);
+  }
+  .form h2 {
+    margin: 0 0 20px;
+    line-height: 1;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .form input {
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: 0.2s linear;
+  }
+  .form input:focus {
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+  }
+  .form button {
+    cursor: pointer;
+    background: #c71717;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    font-weight: bold;
+  }
+  .form button:hover {
+    background: #b83636;
+  }
+  .error,
+  .valid {
+    display: none;
+    font-family: abstract;
+    font-size: 45px;
+    margin: 0 0 65px;
+    color: rgb(255, 0, 0);
   }
   img {
     height:auto;
@@ -35,11 +103,14 @@
   }
   .overlay {
     background-image: url("/images/overlay1.gif");
-    height: 100%;
+    pointer-events: none;
+    height: 100vh;
+    overflow: auto;
+    background-size: contain;
     width: 100%;
     opacity: 0.19;
-    background-repeat: repeat;
     position: absolute;
+    
   }
   .redirect {
     font-weight: bold;

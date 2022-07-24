@@ -17,23 +17,50 @@
    </audio>
   <body>
     <div class=secret>
-      ꉣ꒒ꈼꁲꌚꈼ ꋰꈼ ꂑꋊꄞꂦꌅꂵꈼꂠ ꋖꍩꁲꋖ ꋖꍩꂑꌚ ꅏꈼꋰꌚꂑꋖꈼ ꅏꂑ꒒꒒ ꋰꈼ ꐇꋊꁲꀰꁲꂑ꒒ꁲꋰ꒒ꈼ<br>
-      ꂠꐇꈼ ꋖꂦ ꂵꁲꂑꋊꋖꈼꋊꁲꋊꀯꈼ ꄞꌅꂦꂵ ████████ ██, ████<br><br>
-      ꄞꂦꌅ ꂵꂦꌅꈼ ꂑꋊꄞꂦꌅꂵꁲꋖꂑꂦꋊ, ꉣ꒒ꈼꁲꌚꈼ ꀰꂑꌚꂑꋖ ꐞꂦꐇꌅ ꒒ꂦꀯꁲ꒒<br>
-      ꒒ꁲꀰꈼꁲꋊ ꂵꂑꋊꂑꌚꋖꌅꐞ ꂦꄞ ꂑꋊꄞꂦꌅꂵꁲꋖꂑꂦꋊ ꂦꄞꄞꂑꀯꈼ.<br><br>
-      ꋖꍩꁲꋊꀗ ꐞꂦꐇ ꄞꂦꌅ ꐞꂦꐇꌅ ꉣꁲꋖꂑꈼꋊꀯꈼ ꁲꋊꂠ ꐇꋊꂠꈼꌅꌚꋖꁲꋊꂠꂑꋊꁅ.
+      YꂦU ꂠꂦ NOT ꍩꁲꀰE ꁲCCEꌚꌚ ꋖꂦ THꂑS ꅏꈼBSITꈼ. <br>ꂑF YOU Hꁲꀰꈼ ꁲ VALꂑꂠ LAVEAN ꂵꂑꋊꂑSTRY ꂦꄞ INFOꌅꂵꁲꋖIꂦN ꁲCCOUꋊꋖ, <br>ꉣLEASꈼ LOGIN ꋰELOꅏ.
       </div>
       <div class=redirect>
-        <br>
-        <br>
+        <br><br><br><br><br><br><br><br>
+              <!--Correct username: invitado / pass: hgm2015-->
+
+              <section class="form animated flipInX">
+                <p class="valid">UNAVAILABLE</p>
+                <p class="error">ERROR</p>
+                <form class="loginbox" autocomplete="off">
+                  <input placeholder="ꐇꌚꍟ꒓ꁹꋫꁒꍟ" type="text" id="username"></input>
+                  <input placeholder="ꉣꋫꌚꌚꅐꆂ꒓ꁕ" type="password" id="password"></input>
+              <button id="submit">꒒ꆂꁍꂑꁹ</button>
+              </form>
+              </section>
         <p></p>
           </div>
   <div class=secret>
-    <br>
-
   </div><br><br>
     </p>
     <br><br>
-    <div class="overlay"></div>
+    <!-- <div class="overlay"></div> -->
+
+                  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+              <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+              <script type="text/javascript">
+                  $(document).ready(function() {
+                      $('#submit').click(function() {
+
+                        event.preventDefault(); // prevent PageReLoad
+
+                        var ValidEmail = $('#username').val() === 'galurex'; // User validate
+                        var ValidPassword = $('#password').val() === '2058194021582191'; // Password validate
+
+                          if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
+                              $('.valid').css('display', 'block');
+                              // window.location = "http://kobacat.com";
+                          }
+                          else {
+                              $('.error').css('display', 'block'); // show error
+                          }
+                      });
+                  });
+              </script>
+        <div class="overlay"></div>
   </body>
 </html>
