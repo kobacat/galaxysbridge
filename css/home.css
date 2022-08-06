@@ -1,0 +1,434 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+       margin: 0;
+       padding: 0;
+       border: 0;
+       font-size: 100%;
+       font: inherit;
+       vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+       display: block;
+   }
+   body {
+       line-height: 1;
+   }
+   ol, ul {
+       list-style: none;
+   }
+   blockquote, q {
+       quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+       content: '';
+       content: none;
+   }
+   table {
+       border-collapse: collapse;
+       border-spacing: 0;
+   }
+   
+   .main {
+     display: flex;
+     flex-direction: row;
+   }
+   
+   .content #slideshow {
+     width: 90rem;
+   
+     margin:19px 200px 10px 20px;
+     background-color: rgba(201, 36, 36, 0);
+   }
+   
+   .slideshow-slide img {
+     width: 86.9%;
+     max-height: 608rem;
+     position: relative;
+     left: 11.7rem;
+     filter: brightness(70%);
+   }
+   
+   .slideshow-slide img:hover{
+     filter: brightness(60%);
+   }
+   
+   .disabled a {
+     text-decoration: none;
+     color: #383838 !important;
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+   }
+   
+   .destination a {
+     text-decoration: none;
+     color: #E84C71 !important;
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+   }
+   
+   a {
+     color: #ffffff;
+     text-decoration: none;
+   }
+   
+   h1 {
+     width: 16rem;
+     max-height: 2rem;
+   }
+   
+   
+   a:hover {
+     color: #beaae0;
+   }
+   
+   .navigation a:hover {
+     color: #beaae0
+   }
+   
+   .disabled a:hover {
+     color: #383838
+   }
+   
+   .destination a:hover {
+     color: #383838
+   }
+   
+   .subtext {
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     color:rgb(216, 166, 241);
+     font-size: 1.7em;
+     position: relative;
+     top: 0.4rem;
+     right: -3rem;
+   }
+   
+   .content {
+     flex-grow: 2;
+     background-color: rgba(51, 172, 61, 0);
+     height: 46.6rem;
+     margin: 1rem;
+     max-width: 93REM;
+   }
+   
+   
+   .overlay {
+     max-height: 4.1rem;
+   }
+   
+   .overlay-text {
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     color:rgb(255, 255, 255);
+     font-weight: bold;
+     font-size: 4.7em;
+     position: relative;
+     top: -17rem;
+     right: -3rem;
+   }
+   
+   .slick-dots {
+     display: flex;
+     position: relative;
+     max-height: 0.1rem;
+     top: -1.8rem;
+     left: -40rem;
+     margin: 0;
+     padding: 1px 0;
+     list-style: none;
+   }
+   .slick-dots li{
+     margin: 0 0.25rem;
+     background-color:rgba(255, 255, 255, 0.253);
+     border-radius: 50%;
+   }
+   .slick-dots button {
+     max-width: -3rem;
+     width: 1rem;
+     height: 1rem;
+     padding: 5;
+     border: none;
+     border-radius: 100%;
+     text-indent: -999rem;
+   }
+   .slick-dots li.slick-active button {
+     background-color:#9481b4;
+   }
+   
+   #staffbtn {
+    border: none;
+    outline:none;
+    padding: 0;
+    height: 1rem;
+    background-color:#ffffff;
+   }
+
+   #staffbtn:hover{
+    opacity: 0.6;
+   }
+
+   #staffbtn:active{
+    opacity: 0.3;
+   }
+
+   #homebtn {
+    border: none;
+    outline:none;
+    padding: 0;
+    height: 0rem;
+    background-color:#000000;
+   }
+
+   #homebtn:hover{
+    opacity: 0.6;
+   }
+
+   #homebtn:active{
+    opacity: 0.3;
+   }
+
+   #aboutbtn {
+    border: none;
+    outline:none;
+    padding: 0;
+    height: 0rem;
+    background-color:#000000;
+   }
+
+   #aboutbtn:hover{
+    opacity: 0.6;
+   }
+
+   #aboutbtn:active{
+    opacity: 0.3;
+   }
+
+   #charabtn {
+    border: none;
+    outline:none;
+    padding: 0;
+    height: 2.53124rem;
+    background-color:#000000;
+   }
+
+   #charabtn:hover{
+    opacity: 0.6;
+   }
+
+   #charabtn:active{
+    opacity: 0.3;
+   }
+   
+   body {
+     background-position: cover;
+     background-size: cover;
+     background-color: #000000;
+     color: white;
+     font-family: Verdana;
+       margin:1px 20px 20px 20px;
+   }
+   
+   @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600');
+   
+   
+   h1 {
+     font-size: 2.6em;
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     font-weight: bold;
+     margin:50px 20px 10px 0px;
+   }
+   
+   #steam {
+     width: 25%;
+     height: 20%;
+     position: relative;
+     bottom: 0.3em;
+     left: 1em;
+   }
+   
+   #toyhouse {
+     width: 25%;
+     height: 20%;
+     position: relative;
+     bottom: 0.3em;
+     left: 5em;
+   }
+   
+   #carrd {
+     width: 25%;
+     height: 20%;
+     position: relative;
+     bottom: 0.3em;
+     left: 8em;
+   }
+   
+   #profile {
+     width: 25%;
+     height: 20%;
+     position: relative;
+     bottom: 21.3em;
+     left: 28.2em;
+     border-radius: 05%;
+   }
+   
+   .caption {
+     position: relative;
+     left: 69.9rem;
+     bottom: 8rem;
+     max-width: 10rem;
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     font-weight: lighter;
+     font-size: 1.3rem;
+   }
+   
+   h2 {
+     font-size: 2.2em;
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     margin:50px 20px 10px 20px;
+     max-height: 30rem;
+     position: relative;
+     bottom: 1rem;
+   }
+   
+   .project {
+     font-weight: bold;
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     font-size: 2em;
+     color: rgb(188, 114, 231);
+     justify-content:center;
+     filter: brightness(100%);
+   }
+   
+   .links {
+    font-weight: bold;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 2em;
+    color: rgb(2, 2, 2);
+    justify-content:center;
+    filter: brightness(100%);
+  }
+
+  .site {
+    font-weight: bold;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    justify-content:center;
+    filter: brightness(100%);
+  }
+
+  .login {
+    font-weight: bold;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    justify-content:center;
+    filter: brightness(100%);
+  }
+
+  #loginbtn {
+    border: none;
+    outline:none;
+    padding: 0;
+    height: 2.53124rem;
+    background-color:#000000;
+   }
+
+  #loginbtn:hover{
+    opacity: 0.6;
+   }
+
+   #loginbtn:active{
+    opacity: 0.3;
+   }
+   
+   .redirect {
+     font-weight: bold;
+     max-height: 30rem;
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     font-size: 2em;
+     text-align: center;
+   }
+   
+   .navigation a {
+     text-decoration: none;
+     display: block;
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     font-weight: bold;
+     font-size: 3em;
+     color: white;
+     margin:30px 1px 0px 0px;
+   }
+   
+   @media all and (max-width: 800px) {
+     .navigation {
+       justify-content: space-around;
+     }
+   }
+   
+   .sidebar {
+     display:flex;
+     flex-direction: row;
+     height: 86vh;
+   }
+   
+   .sideborder {
+     border-right: 0.32em solid white;
+     margin: 30px 1px 10px 30px;
+   }
+   
+   .promo {
+     background-color: rgba(255, 255, 255, 0);
+     position: relative;
+     right: -75.3rem;
+     top: -2.8rem;
+     width: 42rem;
+   }
+   
+   header {
+     flex: 1 0 100px;
+     border-bottom: 0.32em solid white;
+     padding: 0.00001em
+   }
+   
+   @media all and (max-width: 600px) {
+     .navigation {
+       flex-flow: column wrap;
+     }
+     .navigation a { 
+       text-align: center; 
+       padding: 10px;
+       border-top: 1px solid rgba(255, 255, 255,0.3); 
+       border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+     }
+     .navigation li:last-of-type a {
+       border-bottom: none;
+     }
+   }
+   
+   
+   

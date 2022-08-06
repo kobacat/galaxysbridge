@@ -101,6 +101,35 @@
     text-align: center;
     filter: brightness(90%);
   }
+  #returnbtn {
+    border: none;
+    outline:none;
+    padding: 0;
+    height: 2.53124rem;
+    background-color:#ffffff;
+   }
+   #returnbtn:hover{
+    opacity: 0.6;
+   }
+   #returnbtn:active{
+    opacity: 0.3;
+   }
+   .links {
+    font-weight: bold;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 2em;
+    color: rgb(2, 2, 2);
+    justify-content:center;
+    filter: brightness(100%);
+  }
+  .home {
+    font-weight: bold;
+    max-height: 30rem;
+    font-size: 3em;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    filter: brightness(90%);
+  }
   .overlay {
     background-image: url("/images/overlay1.gif");
     pointer-events: none;

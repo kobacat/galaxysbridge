@@ -3,64 +3,75 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <title>ꂵꁲꂑꋊꋖꈼꋊꁲꋊꀯꈼ</title>
-    <meta name="description" content="ꅏꈼꋰꌚꂑꋖꈼ ꐇꋊꁲꀰꁲꂑ꒒ꁲꋰ꒒ꈼ ꂠꐇꈼ ꋖꂦ ꂵꁲꂑꋊꋖꈼꋊꁲꋊꀯꈼ"/>
-    <meta name="author" content="galaxysbridge.com"/>
-    <meta name="keywords" content="galaxysbridge,gb,galaxys bridge,laveos"/>
-    <meta property="og:image" content="/images/embed.png"/>
-    <meta name="theme-color" content="#050FAA"/>
-    <link href="css/maint.css" rel="stylesheet" type="text/css" media="all">
+    <title>Page not found!</title>
+    <link href="css/home.css" rel="stylesheet" type="text/css" media="all">
   </head>
  <p> <audio autoplay loop>
-   <!-- <source src="/sounds/tune.mp3" type="audio/mp3"> -->
+   <source src="/sounds/tune.mp3" type="audio/mp3">
    </audio>
   <body>
-    <div class=secret>
-      YꂦU ꂠꂦ NOT ꍩꁲꀰE ꁲCCEꌚꌚ ꋖꂦ THꂑS ꅏꈼBSITꈼ. <br>ꂑF YOU Hꁲꀰꈼ ꁲ VALꂑꂠ LAVEAN ꂵꂑꋊꂑSTRY ꂦꄞ INFOꌅꂵꁲꋖIꂦN ꁲCCOUꋊꋖ, <br>ꉣLEASꈼ LOGIN ꋰELOꅏ.
-      </div>
-      <div class=redirect>
-        <br><br><br><br><br><br><br><br>
-              <!--Correct username: invitado / pass: hgm2015-->
-
-              <section class="form animated flipInX">
-                <p class="valid">GRANTED</p>
-                <p class="error">ERROR</p>
-                <form class="loginbox" autocomplete="off">
-                  <input placeholder="ꐇꌚꍟ꒓ꁹꋫꁒꍟ" type="text" id="username"></input>
-                  <input placeholder="ꉣꋫꌚꌚꅐꆂ꒓ꁕ" type="password" id="password"></input>
-              <button id="submit">꒒ꆂꁍꂑꁹ</button>
-              </form>
-              </section>
-        <p></p>
-          </div>
-  <div class=secret>
-  </div><br><br>
-    </p>
-    <br><br>
-    <!-- <div class="overlay"></div> -->
-
-                  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-              <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-              <script type="text/javascript">
-                  $(document).ready(function() {
-                      $('#submit').click(function() {
-
-                        event.preventDefault(); // prevent PageReLoad
-
-                        var ValidEmail = $('#username').val() === 'vex'; // User validate
-                        var ValidPassword = $('#password').val() === 'fuckjoana'; // Password validate
-
-                          if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
-                              $('.valid').css('display', 'block');
-                              window.location = "https://www.youtube.com/watch?v=3inBqhSSYk0";
-                          }
-                          else {
-                              $('.error').css('display', 'block'); // show error
-                          }
-                      });
-                  });
-              </script>
-        <div class="overlay"></div>
+    <audio id="hoversound" src="/sounds/hover.ogg"></audio>
+    <audio id="impoound" src="/sounds/impo.ogg"></audio>
+    <audio id="clicksound" src="/sounds/click.ogg"></audio>
+    <div class=project style="display: flex;">
+            <img draggable="false" src="/images/project.png" id="projectimg">
+    </div>
+    <div class="links" style="display: flex;">
+        <button id="homebtn" onclick="homeFunction()" onmouseover="document.getElementById('hoversound').cloneNode().play()">
+            <img draggable="false" src="/images/home.png" id="home"/>
+        </button>
+        <button id="aboutbtn" onclick="aboutFunction()" onmouseover="document.getElementById('hoversound').cloneNode().play()">
+            <img draggable="false" src="/images/about.png" id="about"/>
+        </button>
+        <button id="charabtn" onclick="charaFunction()" onmouseover="document.getElementById('hoversound').cloneNode().play()">
+            <img draggable="false" src="/images/character.png" id="character"/>
+        </button>
+        <button id="staffbtn" onclick="staffFunction()" onmouseover="document.getElementById('hoversound').cloneNode().play()">
+            <img draggable="false" src="/images/staff.png" id="staff"/>
+        </button>
+    </div>
+    <div class=site style="display: flex;">
+        <img draggable="false" src="/images/site.png" id="site"/>
+    </div>
+    <div class=login style="display: flex;">
+        <button id="loginbtn" onclick="loginFunction(), location.href = 'https\:\/\/www.galaxysbridge.com/login';" onmouseover="document.getElementById('impoound').cloneNode().play()">
+            <img draggable="false" src="/images/login.png" id="login"/>
+        </button>
+    </div>
+    <script>
+        function homeFunction()
+            {
+                    document.getElementById("projectimg").src = "/images/project.png";
+                    document.getElementById("site").src = "/images/site.png";
+                    document.getElementById('clicksound').cloneNode().play()
+                    document.getElementById("login").src = "/images/login.png";
+            }
+        function aboutFunction()
+            {
+                    document.getElementById("projectimg").src = "/images/ctnterr.png";
+                    document.getElementById("site").src = "/images/site.png";
+                    document.getElementById('clicksound').cloneNode().play()
+                    document.getElementById("login").src = "/images/login.png";
+            }
+        function charaFunction()
+            {
+                    document.getElementById("projectimg").src = "/images/ctnterr.png";
+                    document.getElementById("site").src = "/images/site.png";
+                    document.getElementById('clicksound').cloneNode().play()
+                    document.getElementById("login").src = "/images/login.png";
+            }
+        function staffFunction()
+            {
+                    document.getElementById("projectimg").src = "/images/staffpromo.png";
+                    document.getElementById("site").src = "/images/siteinvert.png";
+                    document.getElementById('clicksound').cloneNode().play()
+                    document.getElementById("login").src = "/images/logininvert.png";
+            }
+        function loginFunction()
+            {
+                    document.getElementById('clicksound').cloneNode().play()
+            }
+    </script>
+    <script src="index.js"></script>
   </body>
 </html>
