@@ -13,8 +13,9 @@
     <audio id="hoversound" src="/sounds/hover.ogg"></audio>
     <audio id="impoound" src="/sounds/impo.ogg"></audio>
     <audio id="clicksound" src="/sounds/click.ogg"></audio>
+    <audio id="errsound" src="/sounds/unavail.ogg"></audio>
     <div class=project style="display: flex;">
-            <img draggable="false" src="/images/project.png" id="projectimg">
+            <img draggable="false" src="/images/projectalt.png" id="projectimg">
     </div>
     <div class="links" style="display: flex;">
         <button id="homebtn" onclick="homeFunction()" onmouseover="document.getElementById('hoversound').cloneNode().play()">
@@ -41,7 +42,7 @@
     <script>
         function homeFunction()
             {
-                    document.getElementById("projectimg").src = "/images/project.png";
+                    document.getElementById("projectimg").src = "/images/projectalt.png";
                     document.getElementById("site").src = "/images/site.png";
                     document.getElementById('clicksound').cloneNode().play()
                     document.getElementById("login").src = "/images/login.png";
